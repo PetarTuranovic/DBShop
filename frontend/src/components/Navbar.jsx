@@ -1,6 +1,6 @@
 import { Button, Container, Flex, HStack, Link, Text } from "@chakra-ui/react";
 import React from "react";
-import PlusSquareIcon from "@chakra-ui/icons";
+import { PlusSquareIcon } from "@chakra-ui/icons";
 const Navbar = () => {
   return (
     <Container maxW={"1140px"} px={4}>
@@ -25,7 +25,9 @@ const Navbar = () => {
         </Text>
         <HStack spacing={2} alignItems={"center"}>
           <Link to={"/create"}>
-            <Button>{/* <PlusSquareIcon fontSize={20} /> */}</Button>
+            <Button>
+              <PlusSquareIcon fontSize={20} />
+            </Button>
           </Link>
         </HStack>
       </Flex>
